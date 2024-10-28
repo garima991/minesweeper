@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+            <div class="overlay" id="start-screen">
+                <div class="overlay-content">
+                <h1>Welcome to Minesweeper!</h1>
+                <button id = "start-button">Start Game</button>
+                </div>
+            </div>
+            <div class="minesweeper">
+                <div id ="minesweeper-head">
+                    <select name="level" id="level">
+                        <option value="easy" selected>Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                        <option value="evil">Evil</option>
+                    </select>
+                    <button id="smiley">
+                        <img src="./assets/smiley.svg" alt="">
+                    </button>
+                    <div class="flag-count">3 <img src="./assets/flag.png" alt=""></div>
+                </div>
+               
+                <div id="board">
+                    <!-- <div class="minesweeper-row">
+                        <div class="tiles"></div>
+                        <div class="tiles"></div>
+                        <div class="tiles"></div>
+                        <div class="tiles"></div>
+                        <div class="tiles"></div>
+                        <div class="tiles"></div>
+                        <div class="tiles"></div>
+                        <div class="tiles"></div>
+                    </div>
+                -->
+                </div>
+                <!-- <div class = "menu">
+                <button id="menu" class = "hide">
+                   
+                    <select name="cheat" id="cheat">
+                        <option value="yes">Cheat Mode : On</option>
+                        <option value="no">Cheat Mode : Off</option>
+                    </select>
+                    <select name="sound" id="sound">
+                        <option value="on">On</option>
+                        <option value="off">Off</option>
+                    </select>
+                </button> 
+                </div> -->
+               
+            </div>
+            <div id="win"></div>
+            <div id="click"></div>
+            <div id="bomb"></div>
+            <div id="over"></div>
+    </main>
+    
+    <script src = "script.js"></script>
+</body>
+</html>
