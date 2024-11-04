@@ -217,13 +217,17 @@ function endGame(winGame) {
     clearInterval(timeInterval);
     revealAllMines();
 
-    setTimeout(()=> {
+    document.querySelectorAll(".tiles").forEach((tile) => {
+        tile.removeEventListener("click", revealTile);
+        tile.removeEventListener("contextMenu", putFlag);
+    });
+
+    setTimeout(() => {
         if (winGame) {
             board.innerHTML = `<h1 class="winning-msg"> YOU WON ! <br><span class = "retry"> Play Again :D <span></h1>`;
             playSound(win);
         } 
         else {
-            console.log("seddd you lost dammittt !");
             board.innerHTML = `
             <h1 class="losing-msg"> YOU LOST ! </br> <span class = "retry">Try Again :)<span></h1>
             `;
