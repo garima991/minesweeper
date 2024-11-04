@@ -17,8 +17,8 @@ let revealedTiles = 0;
 
 const levelMap = {
     easy: { boardSize: 8, mineCount: 20 },
-    medium: { boardSize: 12, mineCount: 50 },
-    hard: { boardSize: 16, mineCount: 80 },
+    medium: { boardSize: 10, mineCount: 50 },
+    hard: { boardSize: 12, mineCount: 80 },
 };
 
 function playSound(sound) {
